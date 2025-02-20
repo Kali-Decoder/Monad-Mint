@@ -46,7 +46,7 @@ app.use("/mint-monad-nft", async (req, res) => {
     return res.status(200).json({
       message: "NFT minted successfully",
       tokenId: tokenId.toString(),
-      transaction: `https://monad-testnet.socialscan.io/tx/${tx.hash}`,
+      transaction: `https://testnet.monadexplorer.com/tx/${tx.hash}`,
     });
   } catch (error) {
     console.log(error);
